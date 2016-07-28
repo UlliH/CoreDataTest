@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="10174" systemVersion="15G31" minimumToolsVersion="Xcode 7.0">
+    <entity name="Details" representedClassName=".Details" syncable="YES">
+        <attribute name="address" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="detailid" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="mail" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="telefon" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="kategorie" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Kategorien" inverseName="details" inverseEntity="Kategorien" syncable="YES"/>
+    </entity>
+    <entity name="Kategorien" representedClassName=".Kategorien" syncable="YES">
+        <attribute name="imagename" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="katid" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="order" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <relationship name="details" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Details" inverseName="kategorie" inverseEntity="Details" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Details" positionX="-54" positionY="18" width="128" height="135"/>
+        <element name="Kategorien" positionX="-63" positionY="-18" width="128" height="120"/>
+    </elements>
+</model>
