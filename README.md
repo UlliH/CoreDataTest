@@ -8,5 +8,5 @@ have a look at "Show the Debug navigator" - "Memory"
 6. have a look at "Memory"
 7. repeat the steps some times
 8. have look at "Memory"
-9.memory decreases every time
+9. memory decreases every time
 10. that´s my problem
